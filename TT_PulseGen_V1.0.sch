@@ -12704,7 +12704,7 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <instance part="IC2" gate="A" x="-71.12" y="38.1"/>
 <instance part="IC2" gate="B" x="-22.86" y="38.1"/>
 <instance part="IC2" gate="C" x="20.32" y="38.1"/>
-<instance part="IC2" gate="D" x="58.42" y="-2.54"/>
+<instance part="IC2" gate="D" x="45.72" y="-2.54"/>
 <instance part="T1" gate="G$1" x="-76.2" y="10.16"/>
 <instance part="T2" gate="G$1" x="119.38" y="68.58"/>
 <instance part="LED1" gate="G$1" x="63.5" y="99.06"/>
@@ -12731,19 +12731,19 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <instance part="GND2" gate="1" x="99.06" y="30.48"/>
 <instance part="JP1" gate="G$1" x="-111.76" y="10.16" rot="R180"/>
 <instance part="R7" gate="G$1" x="121.92" y="17.78" rot="R90"/>
-<instance part="GND3" gate="1" x="121.92" y="7.62"/>
+<instance part="GND3" gate="1" x="121.92" y="2.54"/>
 <instance part="R8" gate="G$1" x="76.2" y="96.52" rot="R90"/>
 <instance part="R9" gate="G$1" x="86.36" y="96.52" rot="R90"/>
 <instance part="R10" gate="G$1" x="63.5" y="111.76" rot="R90"/>
 <instance part="R11" gate="G$1" x="96.52" y="114.3" rot="R90"/>
 <instance part="JP2" gate="G$1" x="76.2" y="111.76" rot="R90"/>
 <instance part="JP3" gate="G$1" x="86.36" y="111.76" rot="R90"/>
-<instance part="R12" gate="G$1" x="99.06" y="0" rot="R180"/>
+<instance part="R12" gate="G$1" x="86.36" y="0" rot="R180"/>
 <instance part="JP4" gate="G$1" x="81.28" y="68.58" rot="R180"/>
-<instance part="S4" gate="1" x="81.28" y="-2.54" rot="R90"/>
-<instance part="JP5" gate="G$1" x="101.6" y="-12.7" rot="R180"/>
-<instance part="JP6" gate="G$1" x="121.92" y="-12.7"/>
-<instance part="JP7" gate="G$1" x="121.92" y="0"/>
+<instance part="S4" gate="1" x="68.58" y="-2.54" rot="R90"/>
+<instance part="JP5" gate="G$1" x="88.9" y="-12.7" rot="R180"/>
+<instance part="JP6" gate="G$1" x="109.22" y="-12.7"/>
+<instance part="JP7" gate="G$1" x="109.22" y="0"/>
 <instance part="JP8" gate="G$1" x="-17.78" y="22.86" rot="R90"/>
 <instance part="JP9" gate="G$1" x="-10.16" y="22.86" rot="R90"/>
 <instance part="JP10" gate="G$1" x="-2.54" y="22.86" rot="R90"/>
@@ -12793,11 +12793,11 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="IC2" gate="D" pin="I0"/>
-<wire x1="50.8" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="0" x2="48.26" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="0" x2="35.56" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="D" pin="I1"/>
-<wire x1="48.26" y1="-2.54" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="-5.08" x2="50.8" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-2.54" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-5.08" x2="38.1" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="27.94" y1="5.08" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
@@ -12807,9 +12807,9 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <wire x1="15.24" y1="-15.24" x2="15.24" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-10.16" x2="27.94" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="27.94" y="-10.16"/>
-<wire x1="48.26" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-2.54" x2="27.94" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="27.94" y="-2.54"/>
-<junction x="48.26" y="-2.54"/>
+<junction x="35.56" y="-2.54"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -12910,27 +12910,14 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="121.92" y1="12.7" x2="121.92" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="IC1" gate="B" pin="CLK"/>
-<wire x1="45.72" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="40.64" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="25.4" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G$1" pin="E"/>
-<wire x1="43.18" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="S"/>
+<wire x1="121.92" y1="10.16" x2="121.92" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="B" pin="R"/>
-<wire x1="43.18" y1="35.56" x2="43.18" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="35.56" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="35.56" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
 <junction x="43.18" y="35.56"/>
-<junction x="43.18" y="25.4"/>
 <pinref part="IC1" gate="A" pin="S"/>
 <wire x1="45.72" y1="78.74" x2="43.18" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="78.74" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
@@ -12939,7 +12926,8 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <wire x1="45.72" y1="66.04" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <junction x="43.18" y="48.26"/>
 <junction x="43.18" y="66.04"/>
-<junction x="121.92" y="25.4"/>
+<wire x1="43.18" y1="10.16" x2="121.92" y2="10.16" width="0.1524" layer="91"/>
+<junction x="121.92" y="10.16"/>
 </segment>
 </net>
 <net name="+15V" class="0">
@@ -13007,10 +12995,10 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <pinref part="IC2" gate="C" pin="O"/>
 <wire x1="33.02" y1="38.1" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="38.1" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="5.08" x2="68.58" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="5.08" x2="68.58" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="5.08" x2="55.88" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="5.08" x2="55.88" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="S4" gate="1" pin="S"/>
-<wire x1="68.58" y1="2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="2.54" x2="63.5" y2="2.54" width="0.1524" layer="91"/>
 <junction x="33.02" y="38.1"/>
 </segment>
 </net>
@@ -13088,29 +13076,29 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <segment>
 <pinref part="S4" gate="1" pin="O"/>
 <pinref part="IC2" gate="D" pin="O"/>
-<wire x1="76.2" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-2.54" x2="53.34" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="S4" gate="1" pin="P"/>
-<wire x1="86.36" y1="0" x2="93.98" y2="0" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="0" x2="81.28" y2="0" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="0" x2="111.76" y2="0" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="0" x2="119.38" y2="0" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="0" x2="111.76" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="-12.7" x2="104.14" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="-12.7" x2="119.38" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="0" x2="99.06" y2="0" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="0" x2="106.68" y2="0" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="0" x2="99.06" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-12.7" x2="91.44" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-12.7" x2="106.68" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <pinref part="JP6" gate="G$1" pin="1"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
-<junction x="111.76" y="-12.7"/>
-<junction x="111.76" y="0"/>
+<junction x="99.06" y="-12.7"/>
+<junction x="99.06" y="0"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -13160,6 +13148,19 @@ Fig 2-13: Voltage controlled pulse generator schematic</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="15.24" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="JP14" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="IC1" gate="B" pin="CLK"/>
+<wire x1="45.72" y1="40.64" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="40.64" x2="38.1" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="T2" gate="G$1" pin="E"/>
+<wire x1="121.92" y1="22.86" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="25.4" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="25.4" x2="121.92" y2="25.4" width="0.1524" layer="91"/>
+<junction x="121.92" y="25.4"/>
 </segment>
 </net>
 </nets>
